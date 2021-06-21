@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" ></script>
+    <title>Projeto Betha</title>
+</head>
+<body class="p-5 text-center">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4"></div>
+            
+            <div class="col-md-4 text-center border py-5 mt-5"> 
+                <header>
+                    <h1>Registro de informações-<br>Cadastro clientes</h1>
+                </header>
+
+                <section>
+                    <form action="#">
+                        <h5>Nome</h5>
+                        <input id="nome" type="text" required>
+                        <h5 >CPF ou CNPJ</h5>
+                        <input id="cpf" type="text" name="cpf" minlength="11" maxlength="14" autocomplete="off" required>
+                        <h5>Endereço</h5>
+                        <input id="endereco" type="text" required>
+                        <h5>Telefone</h5>
+                        <input id="telefone" type="text" maxlength="11" required>
+                    </form>
+
+                    <button type="button" class="mt-4 btn btn-outline-light text-light" onclick="send()">Enviar dados</button>
+                </section>
+            </div>
+
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+</body>
+</html>
